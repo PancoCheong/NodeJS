@@ -28,3 +28,15 @@ exports.show_leads = function(req, res, next) {
         res.render('landing', { title: 'Panco Landing Page', leads: leads });
     })
 }
+
+
+//show individual lead
+exports.show_lead = function(req, res, next) {
+    models.Lead.findOne({
+        where : {
+            id : req.params.lead_id
+        }
+    }).then(lead => {
+        res.render('lead', { lead: lead });
+    })
+}
