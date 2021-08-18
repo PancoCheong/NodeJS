@@ -17,6 +17,7 @@ if path is matched, assign the handler function to process the request
 let landing = require('../controllers/landing');
 router.get('/', landing.get_landing);
 router.post('/', landing.submit_lead);
+router.get('/leads', landing.show_leads);
 
 // export this instant to caller
 module.exports = router;
