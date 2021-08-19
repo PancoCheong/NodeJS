@@ -22,6 +22,8 @@ router.get('/lead/:lead_id', landing.show_lead); //display individual lead
 router.get('/lead/:lead_id/edit', landing.show_edit_lead); //display edit form
 router.post('/lead/:lead_id/edit', landing.edit_lead); //submit edited data
 router.post('/lead/:lead_id/delete', landing.delete_lead); //submit deleted lead id
+router.post('/lead/:lead_id/delete-json', landing.delete_lead_json); //use JS to implement delete lead
+
 
 // export this instant to caller
 module.exports = router;
