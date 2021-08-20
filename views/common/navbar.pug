@@ -1,0 +1,12 @@
+//- ./views/common/navbar.pug - no parameter//
+mixin navbar()
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    div.container-fluid
+      a(href="/", aria-label="Golden Goose").navbar-brand.mr-0.mr-md-2
+        img(src="/images/golden-goose.svg", width="36", height="36")
+      div.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+          li.nav-item
+            a.nav-link.active(href="/") Home
+          li.nav-item
+            a.nav-link(href="/leads") Leads
